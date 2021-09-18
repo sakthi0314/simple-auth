@@ -34,4 +34,6 @@ app.post("/login", (req, res) => {
     .json({ message: "success" })
 })
 
-app.listen(3001, () => console.log("server running up on port 3001"))
+const port = process.env.PORT || 3001
+
+app.listen(port, () => console.log("server running up on port 3001"))
