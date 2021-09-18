@@ -12,7 +12,7 @@ form.addEventListener("submit", e => {
     password: password.value,
   }
 
-  axios.post("http://localhost:3001/login", creds).then(data => {
+  axios.post("/login", creds).then(data => {
     console.log(data)
   })
 })
